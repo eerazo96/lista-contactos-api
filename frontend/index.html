@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Contactos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>Lista de Contactos</h1>
+    <button id="btnNuevo">➕ Nuevo contacto</button>
+  </header>
+
+  <div id="lista" class="lista"></div>
+</div>
+
+<div id="modal" class="modal hidden">
+  <div class="modal-card">
+    <h2>Nuevo Contacto</h2>
+
+    <form id="form">
+      <input type="text" id="nombre" placeholder="Nombre" required>
+      <input type="text" id="telefono" placeholder="Teléfono" required>
+      <input type="email" id="email" placeholder="Correo" required>
+
+      <select id="categoria" required>
+        <option value="">Categoría</option>
+        <option value="Trabajo">Trabajo</option>
+        <option value="Familia">Familia</option>
+        <option value="Amigos">Amigos</option>
+      </select>
+
+      <div class="acciones">
+        <button type="submit">Guardar</button>
+        <button type="button" id="cerrar">Cancelar</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
